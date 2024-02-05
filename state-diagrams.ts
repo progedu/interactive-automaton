@@ -16,22 +16,13 @@ function writeGraph2(
   p: { 回: number, セクション: number, ファイル名: string },
   o: { width: number, height: number },
   g: AutomatonGraph) {
-  const folder_name = `ZICSAM${String(p.回).padStart(2, "0")}_G00${p.セクション}`;
-  /*if (!fs.existsSync(`${folder_name}#image`)) {
-    fs.mkdirSync(`${folder_name}#image`);
-  }
+
+  final_image_list.push(`./${p.ファイル名}`);
   writeGraph({
     ...o,
-    filepath: `${folder_name}#image/${p.ファイル名}`
-  }, g);*/
+    filepath: `./${p.ファイル名}`
+  }, g);
 
- 
-    final_image_list.push(`./${folder_name}_image_${p.ファイル名}`);
-    writeGraph({
-      ...o,
-      filepath: `./${folder_name}_image_${p.ファイル名}`
-    }, g);
-  
 }
 
 /********************

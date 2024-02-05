@@ -33,18 +33,10 @@ async function writeGraph(o, g) {
 }
 const final_image_list = [];
 function writeGraph2(p, o, g) {
-    const folder_name = `ZICSAM${String(p.回).padStart(2, "0")}_G00${p.セクション}`;
-    /*if (!fs.existsSync(`${folder_name}#image`)) {
-      fs.mkdirSync(`${folder_name}#image`);
-    }
-    writeGraph({
-      ...o,
-      filepath: `${folder_name}#image/${p.ファイル名}`
-    }, g);*/
-    final_image_list.push(`./${folder_name}_image_${p.ファイル名}`);
+    final_image_list.push(`./${p.ファイル名}`);
     writeGraph({
         ...o,
-        filepath: `./${folder_name}_image_${p.ファイル名}`
+        filepath: `./${p.ファイル名}`
     }, g);
 }
 /********************
