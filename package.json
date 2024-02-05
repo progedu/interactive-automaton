@@ -1,0 +1,26 @@
+{
+  "name": "dpda-paper",
+  "version": "1.0.0",
+  "description": "ZEN大学「オートマトンと形式言語理論」の教材",
+  "main": "index.js",
+  "scripts": {
+    "diagram": "npx tsc && node state-diagrams.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/progedu/zen-automaton-and-formal-language-theory.git"
+  },
+  "keywords": [
+    "ZEN-univ"
+  ],
+  "author": "hsjoihs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/progedu/zen-automaton-and-formal-language-theory/issues"
+  },
+  "homepage": "https://github.com/progedu/zen-automaton-and-formal-language-theory#readme",
+  "dependencies": {
+    "state-diagram-renderer": "github:progedu/state-diagram-renderer",
+    "typescript": "^5.3.3"
+  }
+}

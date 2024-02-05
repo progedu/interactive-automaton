@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg enable-background="new 0 0 418.5 209.43" version="1.1" viewBox="0 0 418.5 209.43"
+  xml:space="preserve"
+  xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+    .automaton-normal {
+      fill: #66CCFF;
+    }
+
+    .automaton-state-circle {
+      fill: #FFFF99;
+      stroke: #66CCFF;
+      stroke-width: 2;
+      stroke-miterlimit: 10;
+    }
+
+    .automaton-final-state-inner-circle {
+      fill: none;
+      stroke: #66CCFF;
+      stroke-width: 2;
+      stroke-miterlimit: 10;
+    }
+
+    .automaton-state-label {
+      fill: #0041FF;
+      font-family: 'GenJyuuGothic-Bold';
+    }
+
+    .automaton-label {
+      font-size: 9px;
+    }
+
+    .automaton-edge-label {
+      font-family: 'GenJyuuGothic-Medium';
+      font-weight: bold;
+    }
+
+    .automaton-emphasized {
+      fill: #FF99A0;
+    }
+
+    .emphasized-automaton-state-circle {
+      fill: #FFFF99;
+      stroke: #FF99A0;
+      stroke-width: 2;
+      stroke-miterlimit: 10;
+    }
+
+    .emphasized-automaton-final-state-inner-circle {
+      fill: none;
+      stroke: #FF99A0;
+      stroke-width: 2;
+      stroke-miterlimit: 10;
+    }
+
+  </style>
+<g id="graph-root">
+  <g id="edge_q1_to_q2" transform="translate(0 0) translate(55.75 63.41) rotate(0)" class="automaton-normal">
+    <rect x="8.73" y="-2.66" width="54.12" height="5.9"/>
+    <polygon points="72.67 0.29 60.99 -6.46 60.99 7.04"/>
+    <text class="automaton-edge-label automaton-label" transform="translate(38 -12) rotate(0)" x="0" y="0" dominant-baseline="central" text-anchor="middle">ニ</text>
+  </g>
+  <g id="edge_q2_to_q3" transform="translate(0 0) translate(148.4 63.41) rotate(0)" class="automaton-normal">
+    <rect x="8.73" y="-2.66" width="54.12" height="5.9"/>
+    <polygon points="72.67 0.29 60.99 -6.46 60.99 7.04"/>
+    <text class="automaton-edge-label automaton-label" transform="translate(38 -12) rotate(0)" x="0" y="0" dominant-baseline="central" text-anchor="middle">コ</text>
+  </g>
+  <g id="edge_q2_to_q4" transform="translate(0 0) translate(148.4 63.41) rotate(90)" class="automaton-normal">
+    <rect x="8.73" y="-2.66" width="54.12" height="5.9"/>
+    <polygon points="72.67 0.29 60.99 -6.46 60.99 7.04"/>
+    <text class="automaton-edge-label automaton-label" transform="translate(38 -12) rotate(-90)" x="0" y="0" dominant-baseline="central" text-anchor="middle">ニ</text>
+  </g>
+  <g id="edge_q1_to_q1" transform="translate(0 0) translate(55.75 63.41) rotate(90)" class="automaton-normal">
+    <text class="automaton-edge-label automaton-label" x="0" y="0" transform="translate(36 0.6) rotate(-90)" dominant-baseline="central" text-anchor="middle">コ</text>
+    <g transform="rotate(30)">
+      <path d="m 23.06 3.23 l -8.2 -0.9 l 4.3 -7.2 l 3.9 8.1 z"/>
+      <path d="m 14.5 -19.9 c -2.9 0.2 -5.8 1.5 -7.8 3.9 l -0 0 l -0 0 c -1.9 2.3 -2.7 5.1 -2.7 7.7 h 3.5 c 0 -1.9 0.6 -3.9 1.9 -5.5 c 2.9 -3.4 7.8 -3.7 11.1 -0.8 c 3.3 2.9 3.7 8 0.8 11.3 c -0.4 0.5 -1.5 1.3 -2.3 1.7 l 1.7 3.1 c 1 -0.6 2.3 -1.4 3.3 -2.5 l 0 -0 l 0 -0 C 28.1 -5.7 27.5 -13 22.8 -17.1 c -2.4 -2.1 -5.3 -3 -8.3 -2.8 z"/>
+    </g>
+  </g>
+  <g id="edge_q4_to_q4" transform="translate(0 0) translate(148.4 156.06) rotate(90)" class="automaton-normal">
+    <text class="automaton-edge-label automaton-label" x="0" y="0" transform="translate(36 0.6) rotate(-90)" dominant-baseline="central" text-anchor="middle">ニ,コ</text>
+    <g transform="rotate(30)">
+      <path d="m 23.06 3.23 l -8.2 -0.9 l 4.3 -7.2 l 3.9 8.1 z"/>
+      <path d="m 14.5 -19.9 c -2.9 0.2 -5.8 1.5 -7.8 3.9 l -0 0 l -0 0 c -1.9 2.3 -2.7 5.1 -2.7 7.7 h 3.5 c 0 -1.9 0.6 -3.9 1.9 -5.5 c 2.9 -3.4 7.8 -3.7 11.1 -0.8 c 3.3 2.9 3.7 8 0.8 11.3 c -0.4 0.5 -1.5 1.3 -2.3 1.7 l 1.7 3.1 c 1 -0.6 2.3 -1.4 3.3 -2.5 l 0 -0 l 0 -0 C 28.1 -5.7 27.5 -13 22.8 -17.1 c -2.4 -2.1 -5.3 -3 -8.3 -2.8 z"/>
+    </g>
+  </g>
+  <g id="edge_q3_to_q3" transform="translate(0 0) translate(241.05 63.41) rotate(90)" class="automaton-normal">
+    <text class="automaton-edge-label automaton-label" x="0" y="0" transform="translate(36 0.6) rotate(-90)" dominant-baseline="central" text-anchor="middle">ニ,コ</text>
+    <g transform="rotate(30)">
+      <path d="m 23.06 3.23 l -8.2 -0.9 l 4.3 -7.2 l 3.9 8.1 z"/>
+      <path d="m 14.5 -19.9 c -2.9 0.2 -5.8 1.5 -7.8 3.9 l -0 0 l -0 0 c -1.9 2.3 -2.7 5.1 -2.7 7.7 h 3.5 c 0 -1.9 0.6 -3.9 1.9 -5.5 c 2.9 -3.4 7.8 -3.7 11.1 -0.8 c 3.3 2.9 3.7 8 0.8 11.3 c -0.4 0.5 -1.5 1.3 -2.3 1.7 l 1.7 3.1 c 1 -0.6 2.3 -1.4 3.3 -2.5 l 0 -0 l 0 -0 C 28.1 -5.7 27.5 -13 22.8 -17.1 c -2.4 -2.1 -5.3 -3 -8.3 -2.8 z"/>
+    </g>
+  </g>
+  <g id="initial_arrow" class="automaton-normal" transform="translate(0 0)">
+    <rect transform="matrix(.7345 .6786 -.6786 .7345 36.762 -7.4342)" x="18.29" y="40.93" width="19.18" height="4.66"/>
+    <polygon points="40.62 55.03 37.46 44.87 30.24 52.68"/>
+  </g>
+  <g id="state_q1" transform="translate(55.75 63.41)">
+    <circle class="automaton-state-circle" cx="0" cy="0" r="14.08"/>
+    <text class="automaton-state-label automaton-label" x="0" y="0" dominant-baseline="central" text-anchor="middle">q1</text>
+  </g>
+  <g id="state_q2" transform="translate(148.4 63.41)">
+    <circle class="automaton-state-circle" cx="0" cy="0" r="14.08"/>
+    <text class="automaton-state-label automaton-label" x="0" y="0" dominant-baseline="central" text-anchor="middle">q2</text>
+  </g>
+  <g id="final_state_q3" transform="translate(241.05 63.41)">
+    <circle class="automaton-state-circle" cx="0" cy="0" r="14.08"/>
+    <circle class="automaton-final-state-inner-circle" cx="0" cy="0" r="10"/>
+    <text class="automaton-state-label automaton-label" x="0" y="0" dominant-baseline="central" text-anchor="middle">q3</text>
+  </g>
+  <g id="state_q4" transform="translate(148.4 156.06)">
+    <circle class="automaton-state-circle" cx="0" cy="0" r="14.08"/>
+    <text class="automaton-state-label automaton-label" x="0" y="0" dominant-baseline="central" text-anchor="middle">q4</text>
+  </g>
+</g>
+</svg>

@@ -1,0 +1,49 @@
+.automaton-normal {
+  fill: #66CCFF;
+}
+
+.automaton-state-circle {
+  fill: #FFFF99;
+  stroke: #66CCFF;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+.automaton-final-state-inner-circle {
+  fill: none;
+  stroke: #66CCFF;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+.automaton-state-label {
+  fill: #0041FF;
+  font-family: 'GenJyuuGothic-Bold';
+}
+
+.automaton-label {
+  font-size: 9px;
+}
+
+.automaton-edge-label {
+  font-family: 'GenJyuuGothic-Medium';
+  font-weight: bold;
+}
+
+.automaton-emphasized {
+  fill: #FF99A0;
+}
+
+.emphasized-automaton-state-circle {
+  fill: #FFFF99;
+  stroke: #FF99A0;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+.emphasized-automaton-final-state-inner-circle {
+  fill: none;
+  stroke: #FF99A0;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
