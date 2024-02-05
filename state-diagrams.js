@@ -62,12 +62,14 @@ writeGraph2({ 回: 2, セクション: 5, ファイル名: "FOO$$-1.svg" }, {
     width: 418.5,
     height: 209.43
 }, FOO);
-playback_automaton_and_write_sequential({
-    回: 2, セクション: 5, file_prefix: "FOO_NICO$$",
-}, {
-    width: 418.5,
-    height: 209.43
-}, FOO, "ニコ");
+function foo(s) {
+    playback_automaton_and_write_sequential({
+        回: 2, セクション: 5, file_prefix: `FOO_${s}$$`,
+    }, {
+        width: 418.5,
+        height: 209.43
+    }, FOO, s);
+}
 const BAR = {
     vertices: [
         { id: "q1", center: { x: 0, y: Math.sqrt(3) / 2 } },
@@ -101,7 +103,15 @@ function playback_automaton_and_write_sequential(p, o, g, input) {
         });
     }
 }
-playback_automaton_and_write_sequential({ 回: 2, セクション: 5, file_prefix: `BAR_KO$$`, }, { width: 418.5, height: 300 }, BAR, "コ");
-playback_automaton_and_write_sequential({ 回: 2, セクション: 5, file_prefix: `BAR_NINI$$`, }, { width: 418.5, height: 300 }, BAR, "ニニ");
-playback_automaton_and_write_sequential({ 回: 2, セクション: 5, file_prefix: `BAR_NICOCO$$`, }, { width: 418.5, height: 300 }, BAR, "ニココ");
+function bar(s) {
+    playback_automaton_and_write_sequential({ 回: 2, セクション: 5, file_prefix: `BAR_${s}$$`, }, { width: 418.5, height: 300 }, BAR, s);
+}
+foo("コ");
+foo("ニコ");
+foo("ニニ");
+foo("ニココ");
+bar("コ");
+bar("ニコ");
+bar("ニニ");
+bar("ニココ");
 fs.promises.writeFile("all_state_diagrams.html", `<!DOCTYPE html><style>img { border: 1px solid pink; } </style><body>${final_image_list.map(path => `<p>${path}</p><img src="${path.replace('#', '%23')}" /><hr>`).join("\n")}</body>`);

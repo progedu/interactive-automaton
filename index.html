@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<html lang="ja">
+
+<script>
+  function foo() {
+    const automaton = document.getElementById("automaton").value;
+    const input_string = document.getElementById("input_string").value;
+    let step = document.getElementById("step").value;
+
+    document.getElementById("step").max = input_string.length;
+
+    if (Number(step) > input_string.length) {
+      step = `${input_string.length}`;
+    }
+
+    // console.log({ automaton, input_string, step });
+
+    const path = `${automaton}_${input_string}$$${step}.svg`;
+    document.getElementById("result").innerHTML = `<img src="${path}">`
+  }
+</script>
+
+
+<label for="automaton">使うオートマトン: </label><select id="automaton" onchange="foo()">
+  <option value="FOO">FOO</option>
+  <option value="BAR">BAR</option>
+</select><br>
+
+<label for="input_string">入力文字列: </label><select id="input_string" onchange="foo()">
+  <option value="コ">コ</option>
+  <option value="ニコ">ニコ</option>
+  <option value="ニニ">ニニ</option>
+  <option value="ニココ">ニココ</option>
+</select><br>
+
+<label for="step">ステップ数: </label>
+<input type="range" id="step" name="step" min="0" max="3" onchange="foo()" />
+<div id="result">
+
+</div>
+
+
+</html>
