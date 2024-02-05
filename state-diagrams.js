@@ -58,12 +58,12 @@ const FOO = {
         { label: "ニ", from: "q2", to: "q4" },
     ]
 };
-writeGraph2({ 回: 2, セクション: 5, ファイル名: "DFA_NICO$$-1.svg" }, {
+writeGraph2({ 回: 2, セクション: 5, ファイル名: "FOO$$-1.svg" }, {
     width: 418.5,
     height: 209.43
 }, FOO);
 playback_automaton_and_write_sequential({
-    回: 2, セクション: 5, file_prefix: "DFA_NICO$$",
+    回: 2, セクション: 5, file_prefix: "FOO_NICO$$",
 }, {
     width: 418.5,
     height: 209.43
@@ -84,7 +84,7 @@ const BAR = {
         { label: "コ", from: "q4", to: "q5" },
     ]
 };
-writeGraph2({ 回: 2, セクション: 5, ファイル名: "nfa_no_piece.svg" }, {
+writeGraph2({ 回: 2, セクション: 5, ファイル名: "BAR$$-1.svg" }, {
     width: 418.5,
     height: 300
 }, BAR);
@@ -101,7 +101,7 @@ function playback_automaton_and_write_sequential(p, o, g, input) {
         });
     }
 }
-playback_automaton_and_write_sequential({ 回: 2, セクション: 5, file_prefix: `KO$$step0`, }, { width: 418.5, height: 300 }, BAR, "コ");
-playback_automaton_and_write_sequential({ 回: 2, セクション: 5, file_prefix: `NINI$$step0`, }, { width: 418.5, height: 300 }, BAR, "ニニ");
-playback_automaton_and_write_sequential({ 回: 2, セクション: 5, file_prefix: `NICOCO$$step0`, }, { width: 418.5, height: 300 }, BAR, "ニココ");
+playback_automaton_and_write_sequential({ 回: 2, セクション: 5, file_prefix: `BAR_KO$$`, }, { width: 418.5, height: 300 }, BAR, "コ");
+playback_automaton_and_write_sequential({ 回: 2, セクション: 5, file_prefix: `BAR_NINI$$`, }, { width: 418.5, height: 300 }, BAR, "ニニ");
+playback_automaton_and_write_sequential({ 回: 2, セクション: 5, file_prefix: `BAR_NICOCO$$`, }, { width: 418.5, height: 300 }, BAR, "ニココ");
 fs.promises.writeFile("all_state_diagrams.html", `<!DOCTYPE html><style>img { border: 1px solid pink; } </style><body>${final_image_list.map(path => `<p>${path}</p><img src="${path.replace('#', '%23')}" /><hr>`).join("\n")}</body>`);
